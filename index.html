@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação - Jorge Luiz</title>
+
+    <!-- CSS interno -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #00796b;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #c8e6c9;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitulo {
+            font-size: 1.2rem;
+            color: #c8e6c9;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            padding: 0 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .foto {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .curso {
+            color: #00796b;
+            font-weight: bold;
+        }
+
+        h3 {
+            color: #00796b;
+            margin-top: 20px;
+            font-size: 1.4rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        ul li a {
+            color: #00796b;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        ul li a:hover {
+            color: #004d40;
+        }
+
+        .redes-sociais a {
+            display: inline-block;
+            margin: 10px 15px;
+            padding: 10px 20px;
+            background: #00796b;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+        }
+
+        .redes-sociais a:hover {
+            background: #004d40;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px 0;
+            background: #00796b;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <h1>Jorge Luiz</h1>
+        <p class="subtitulo">Estudante de Redes de Computadores</p>
+    </header>
+
+    <section class="container">
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Foto de Jorge Luiz" class="foto">
+            <h2>Jorge Luiz</h2>
+            <p class="curso">Curso: Redes de Computadores</p>
+            <p><strong>Instituto Federal Baiano</strong> | Polo Remanso</p>
+
+            <hr>
+
+            <h3 id="sobre">Sobre mim</h3>
+            <p>
+                Olá! Sou Cássio Silva Dos Santos, estudante do curso de Redes de Computadores no Instituto Federal Baiano,
+                polo Remanso. Sou apaixonado por tecnologia, infraestrutura de redes, servidores e segurança
+                da informação. Busco sempre aprender mais e colocar em prática o que estudo.
+            </p>
+
+            <h3>Habilidades</h3>
+            <ul>
+                <li>Configuração de Redes Locais (LAN)</li>
+                <li>Administração de Servidores</li>
+                <li>Segurança de Redes</li>
+                <li>Virtualização e Cloud Computing</li>
+                <li>Programação em Python e Shell Script</li>
+            </ul>
+
+            <h3 id="portfolio">Portfólio</h3>
+            <ul>
+                <li><a href="#">Projeto 1: Implementação de Rede Local</a></li>
+                <li><a href="#">Projeto 2: Configuração de Servidor Web</a></li>
+                <li><a href="#">Projeto 3: Automação de Redes com Python</a></li>
+            </ul>
+
+            <h3 id="contato">Contato</h3>
+            <ul>
+                <li>Email: jorgeluiz@example.com</li>
+                <li>Telefone: (74) 9 9999-9999</li>
+            </ul>
+
+            <div class="redes-sociais">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Instituto Federal Baiano - Polo Remanso © 2025</p>
+    </footer>
+
+</body>
+</html>
